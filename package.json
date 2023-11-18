@@ -1,10 +1,13 @@
 {
-  "name": "template",
+  "name": "dropDownMenu",
   "version": "1.0.0",
-  "description": "A basic template",
+  "description": "Drop down menu",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack serve --open --config webpack.dev.js",
+    "build": "webpack --config webpack.prod.js",
+    "pages": "git subtree push --prefix dist origin gh-pages"
   },
   "author": "Angelo Thys",
   "license": "MIT",
